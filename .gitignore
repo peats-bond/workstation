@@ -2,6 +2,7 @@
 /*
 
 !.gitignore
+!.gitmodules
 
 # dot files
 !.emacs
@@ -10,3 +11,7 @@
 
 # scripts
 !workstation/
+
+# prezto
+!.zprezto/
+#.zprezto/runcoms/README.md
