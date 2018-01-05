@@ -1,0 +1,5 @@
+# amending
+bind status A !git commit --amend
+
+# branching
+bind main B !git checkout -B "%(prompt Enter branch name: )" %(commit)

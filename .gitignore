@@ -1,0 +1,12 @@
+# whitelist
+/*
+
+!.gitignore
+
+# dot files
+!.emacs
+!.gitconfig
+!.tigrc
+
+# scripts
+!workstation/

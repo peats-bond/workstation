@@ -1,0 +1,55 @@
+[user]
+	name = Alex Peats-Bond
+	email = alexpb.tgm@gmail.com
+[core]
+	editor = emacs
+	hooksPath = /Users/apeatsbond/.git-hooks
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[credential]
+	helper = osxkeychain
+[branch]
+	autosetuprebase = always
+[rerere]
+	enabled = true
+[alias]
+	co = checkout
+	cm = commit -m
+	br = branch
+	cmend = commit --amend
+	
+	st = status
+	stp = stash pop
+
+	chp = cherry-pick
+	sha = rev-parse HEAD
+
+	rb = rebase
+	rbi = rebase -i
+	rbom = rebase -i origin/master
+	rbod = rebase -i origin/dev
+	rbc = rebase --continue
+
+[url "ssh://gitolite@code.uber.internal/"]
+	insteadOf = git://code.uber.internal/
+[url "ssh://git@github.com/uber/"]
+	insteadOf = https://github.com/uber/
+[url "ssh://code.uber.internal/"]
+	insteadOf = https://code.uber.internal/
+[url "ssh://config.uber.internal/"]
+	insteadOf = https://config.uber.internal/
+[http "https://gopkg.uberinternal.com"]
+	followRedirects = true
+[http "https://gopkg.in"]
+	followRedirects = true
+
+[farc "upload"]
+    message = false
+[farc "land"]
+    always-rewrite = true
+[farc "rewrite-with-differential-uri"]
+    style = phabricator-godawful-ugly
+[farc "update"]
+	url = gitolite@code.uber.internal:personal/xyzzy/farc
