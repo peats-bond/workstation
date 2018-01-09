@@ -16,9 +16,12 @@
 	enabled = true
 [alias]
 	co = checkout
+	
 	cm = commit -m
-	br = branch
 	cmend = commit --amend
+	wip = commit -am "wip"
+
+	br = branch
 	
 	st = status
 	stp = stash pop
