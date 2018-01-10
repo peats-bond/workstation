@@ -31,8 +31,10 @@
 
 	rb = rebase
 	rbi = rebase -i
-	rbom = rebase -i origin/master
-	rbod = rebase -i origin/dev
+	rbom = rebase origin/master
+	rbomi = rebase -i origin/master
+	rbod = rebase origin/dev
+	rbodi = rebase -i origin/dev
 	rbc = rebase --continue
 
 [url "ssh://gitolite@code.uber.internal/"]
