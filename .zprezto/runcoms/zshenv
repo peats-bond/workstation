@@ -18,6 +18,7 @@ export EDITOR=emacs
 export GOPATH=$HOME/gocode
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:$GOPATH/bin
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 #
 # android dev
