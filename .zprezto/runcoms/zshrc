@@ -7,8 +7,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# ag
-alias ag='ag --hidden'
+# ls
 alias ls='ls -a'
 
 # Fun Aliases
