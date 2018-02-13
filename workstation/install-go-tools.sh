@@ -10,3 +10,5 @@ go get -u -v sourcegraph.com/sqs/goreturns
 go get -u -v github.com/ramya-rao-a/go-outline
 go get -u -v github.com/uudashr/gopkgs/cmd/gopkgs
 go get -u -v github.com/nsf/gocode
+
+go get -u -v github.com/google/pprof
