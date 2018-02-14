@@ -1,19 +1,6 @@
 (package-initialize)
-(setq
-        ;; text file back ups
-        backup-directory-alist 
-		'(("." . "~/.emacs.d/backup"))
-	backup-by-copying t
-	delete-old-versions t
-	kept-new-versions 11
-	kept-old-versions 5
-	version-control t
 
-	;; text editing
-	column-number-mode t
-	x-select-enable-clipboard t
-	)
-
+;; packages
 (add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
@@ -32,6 +19,19 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; text file back ups
+(setq backup-directory-alist '(("." . "~/.emacs.d/backup")))
+(setq backup-by-copying t)
+(setq delete-old-versions t)
+(setq kept-new-versions 11)
+(setq kept-old-versions 5)
+(setq version-control t)
+
+;; text editing
+(setq column-number-mode t)
+(setq x-select-enable-clipboard t)
+(global-linum-mode t) ;; line numbers on the left
 
 ;; git
 (global-git-gutter-mode +1)
