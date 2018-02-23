@@ -41,6 +41,6 @@
 (global-git-gutter-mode +1)
 
 ;; golang
-(setq gofmt-command "goimports")
+(setq gofmt-command "goreturns")
 (add-hook 'before-save-hook 'gofmt-before-save)
 (require 'go-autocomplete)
