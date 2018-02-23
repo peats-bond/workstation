@@ -12,7 +12,7 @@
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(custom-enabled-themes (quote (tango-dark)))
- '(package-selected-packages (quote (git-gutter go-mode))))
+ '(package-selected-packages (quote (go-autocomplete auto-complete git-gutter go-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -33,5 +33,14 @@
 (setq x-select-enable-clipboard t)
 (global-linum-mode t) ;; line numbers on the left
 
+;; auto-complete
+(require 'auto-complete-config)
+(ac-config-default)
+
 ;; git
 (global-git-gutter-mode +1)
+
+;; golang
+(setq gofmt-command "goimports")
+(add-hook 'before-save-hook 'gofmt-before-save)
+(require 'go-autocomplete)
