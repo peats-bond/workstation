@@ -14,7 +14,7 @@
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(custom-enabled-themes (quote (tango-dark)))
- '(package-selected-packages (quote (go-autocomplete auto-complete git-gutter go-mode))))
+ '(package-selected-packages (quote (company company-go git-gutter go-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -40,14 +40,13 @@
 (global-linum-mode t) ;; line numbers on the left
 (show-paren-mode t) ;; matching parenthesis
 
-;; auto-complete
-(require 'auto-complete-config)
-(ac-config-default)
-
 ;; git
 (global-git-gutter-mode +1)
 
 ;; golang
 (setq gofmt-command "goreturns")
 (add-hook 'before-save-hook 'gofmt-before-save)
-(require 'go-autocomplete)
+(require 'company-go)
+(add-hook 'go-mode-hook (lambda () ;; only enable in go-mode
+                         (set (make-local-variable 'company-backends) '(company-go))
+			 (company-mode)))
