@@ -43,6 +43,10 @@
 (global-linum-mode t) ;; line numbers on the left
 (show-paren-mode t) ;; matching parenthesis
 
+;; neotree
+(setq neo-smart-open t)
+(setq neo-show-hidden-files t)
+
 ;; git
 (global-git-gutter-mode +1)
 
