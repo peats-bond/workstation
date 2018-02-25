@@ -43,10 +43,17 @@
 ;; git
 (global-git-gutter-mode +1)
 
+;; auto-complete
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
+(setq company-idle-delay 0)
+(setq company-echo-delay 0)                          ; remove annoying blinking
+(setq company-begin-commands '(self-insert-command)) ; start autocompletion only after typing
+
 ;; golang
-(setq gofmt-command "goreturns")
-(add-hook 'before-save-hook 'gofmt-before-save)
 (require 'company-go)
 (add-hook 'go-mode-hook (lambda () ;; only enable in go-mode
                          (set (make-local-variable 'company-backends) '(company-go))
 			 (company-mode)))
+(setq gofmt-command "goreturns")
+(add-hook 'before-save-hook 'gofmt-before-save)
