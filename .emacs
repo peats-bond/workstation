@@ -32,6 +32,7 @@
 (setq column-number-mode t)
 (setq x-select-enable-clipboard t)
 (global-linum-mode t) ;; line numbers on the left
+(show-paren-mode t) ;; matching parenthesis
 
 ;; auto-complete
 (require 'auto-complete-config)
