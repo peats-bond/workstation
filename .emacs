@@ -35,6 +35,7 @@
 (setq version-control t)
 
 ;; text editing
+(menu-bar-mode -1) ;; hide menu bar
 (setq column-number-mode t)
 (setq x-select-enable-clipboard t)
 (global-linum-mode t) ;; line numbers on the left
