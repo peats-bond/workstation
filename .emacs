@@ -20,6 +20,10 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; OS specific
+(when (string= system-type "darwin")       
+  (setq dired-use-ls-dired nil))
+
 ;; text file back ups
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup")))
 (setq backup-by-copying t)
