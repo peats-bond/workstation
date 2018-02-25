@@ -22,7 +22,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(go-guru-hl-identifier-face ((t (:background "black")))))
 
 ;; OS specific
 (when (string= system-type "darwin")       
@@ -61,7 +61,9 @@
 ;; golang
 (require 'company-go)
 (add-hook 'go-mode-hook (lambda () ;; only enable in go-mode
-                         (set (make-local-variable 'company-backends) '(company-go))
-			 (company-mode)))
+			  (add-hook 'before-save-hook 'gofmt-before-save)
+			  (go-guru-hl-identifier-mode) ;; highlight matching variables
+			  (setq go-guru-hl-identifier-idle-time 0)
+			  (set (make-local-variable 'company-backends) '(company-go))
+			  (company-mode)))
 (setq gofmt-command "goreturns")
-(add-hook 'before-save-hook 'gofmt-before-save)
