@@ -46,10 +46,10 @@
 
 ;; text editing
 (menu-bar-mode -1) ;; hide menu bar
-(setq column-number-mode t)
 (setq x-select-enable-clipboard t)
 (global-linum-mode t) ;; line numbers on the left
 (setq linum-format "%d ") ;; add space between line numbers and text
+(setq column-number-mode t)
 (show-paren-mode t) ;; matching parenthesis
 
 ;; neotree
@@ -59,19 +59,19 @@
 ;; git
 (global-git-gutter-mode +1)
 
-;; auto-complete
+;; company (auto-completion)
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 (setq company-idle-delay 0)
-(setq company-echo-delay 0)                          ; remove annoying blinking
-(setq company-begin-commands '(self-insert-command)) ; start autocompletion only after typing
+(setq company-echo-delay 0)                          ;; remove annoying blinking
+(setq company-begin-commands '(self-insert-command)) ;; start autocompletion only after typing
 
 ;; golang
-(require 'company-go)
 (add-hook 'go-mode-hook (lambda () ;; only enable in go-mode
+			  (require 'company-go)
 			  (add-hook 'before-save-hook 'gofmt-before-save)
+			  (setq gofmt-command "goreturns")
 			  (go-guru-hl-identifier-mode) ;; highlight matching variables
 			  (setq go-guru-hl-identifier-idle-time 0)
 			  (set (make-local-variable 'company-backends) '(company-go))
 			  (company-mode)))
-(setq gofmt-command "goreturns")
