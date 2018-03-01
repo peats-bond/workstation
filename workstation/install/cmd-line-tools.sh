@@ -1,7 +1,7 @@
 #!/bin/bash
 
 shell="zsh emacs"
-navigation="rg fasd ranger"
+navigation="rg fasd ranger tree"
 dev="mitmproxy tig"
 
 tools=($shell $navigation $dev)
