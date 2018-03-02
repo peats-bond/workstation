@@ -37,24 +37,6 @@
 	rbodi = rebase -i origin/dev
 	rbc = rebase --continue
 
-[url "ssh://gitolite@code.uber.internal/"]
-	insteadOf = git://code.uber.internal/
-[url "ssh://git@github.com/uber/"]
-	insteadOf = https://github.com/uber/
-[url "ssh://code.uber.internal/"]
-	insteadOf = https://code.uber.internal/
-[url "ssh://config.uber.internal/"]
-	insteadOf = https://config.uber.internal/
-[http "https://gopkg.uberinternal.com"]
-	followRedirects = true
-[http "https://gopkg.in"]
-	followRedirects = true
+[include]
+	path = ~/.gitconfig_local
 
-[farc "upload"]
-    message = false
-[farc "land"]
-    always-rewrite = true
-[farc "rewrite-with-differential-uri"]
-    style = phabricator-godawful-ugly
-[farc "update"]
-	url = gitolite@code.uber.internal:personal/xyzzy/farc
