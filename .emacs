@@ -16,7 +16,7 @@
  '(custom-enabled-themes (quote (tango-dark)))
  '(package-selected-packages
    (quote
-    (go-fill-struct neotree go-guru go-rename company company-go git-gutter go-mode))))
+    (markdown-preview-mode ag go-fill-struct neotree go-guru go-rename company company-go git-gutter go-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

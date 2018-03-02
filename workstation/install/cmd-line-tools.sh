@@ -2,7 +2,7 @@
 
 shell="zsh emacs"
 navigation="rg fasd ranger tree"
-dev="mitmproxy tig htop"
+dev="mitmproxy tig htop markdown"
 
 tools=($shell $navigation $dev)
 
