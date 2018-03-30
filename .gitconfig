@@ -29,6 +29,10 @@
 	chp = cherry-pick
 	sha = rev-parse HEAD
 
+	fo = fetch -p origin
+	fom = fetch origin master:master
+	fod = fetch origin dev:dev
+
 	rb = rebase
 	rbi = rebase -i
 	rbom = rebase origin/master
