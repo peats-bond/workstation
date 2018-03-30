@@ -64,6 +64,9 @@
 (setq company-echo-delay 0)                          ;; remove annoying blinking
 (setq company-begin-commands '(self-insert-command)) ;; start autocompletion only after typing
 
+;; markdown
+(setq markdown-preview-stylesheets nil) ;; remove awful stylesheets
+
 ;; golang
 (add-hook 'go-mode-hook (lambda () ;; only enable in go-mode
 			  (require 'company-go)
@@ -73,3 +76,4 @@
 			  (setq go-guru-hl-identifier-idle-time 0)
 			  (set (make-local-variable 'company-backends) '(company-go))
 			  (company-mode)))
+
