@@ -12,3 +12,4 @@ go get -u -v github.com/uudashr/gopkgs/cmd/gopkgs
 go get -u -v github.com/nsf/gocode
 
 go get -u -v github.com/google/pprof
+go get -u github.com/derekparker/delve/cmd/dlv
