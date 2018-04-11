@@ -10,6 +10,9 @@ fi
 # ls
 alias ls='ls -a'
 
+# tree
+alias t='tree -a -L 1'
+
 # Fun Aliases
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy; echo '¯\_(ツ)_/¯'"
 alias tableflip='echo "(╯°□°)╯︵ ┻━┻" | pbcopy; echo "(╯°□°)╯︵ ┻━┻"'
