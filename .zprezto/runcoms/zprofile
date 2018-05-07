@@ -69,3 +69,9 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+#
+# python
+#
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
