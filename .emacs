@@ -16,7 +16,7 @@
  '(custom-enabled-themes (quote (tango-dark)))
  '(package-selected-packages
    (quote
-    (markdown-preview-mode ag go-fill-struct neotree go-guru go-rename company company-go git-gutter go-mode))))
+    (multiple-cursors markdown-preview-mode ag go-fill-struct neotree go-guru go-rename company company-go git-gutter go-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -41,6 +41,7 @@
 (setq kept-new-versions 11)
 (setq kept-old-versions 5)
 (setq version-control t)
+(setq backup-directory-alist `(("." . ,(concat user-emacs-directory "~/.emacs.d/auto-save/"))))
 
 ;; text editing
 (menu-bar-mode -1) ;; hide menu bar
