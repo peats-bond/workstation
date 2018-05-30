@@ -26,6 +26,7 @@
 	
 	st = status
 	stp = stash pop
+	std = stash drop stash@{0}
 
 	chp = cherry-pick
 	sha = rev-parse HEAD
