@@ -24,3 +24,5 @@
   fi
 
 } >&2
+
+export EDITOR=emacs
