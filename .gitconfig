@@ -23,6 +23,7 @@
 	wip = commit -am "wip"
 
 	br = branch
+	cbr = rev-parse --abbrev-ref HEAD
 	
 	st = status
 	stp = stash pop
