@@ -36,6 +36,8 @@
 	fom = fetch origin master:master
 	fod = fetch origin dev:dev
 
+	lg = log --pretty='%h  %Cred%<(12)%ar  %Cgreen%<(16)%an  %Cblue %s'
+
 	rb = rebase
 	rbi = rebase -i
 	rbom = rebase origin/master
