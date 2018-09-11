@@ -21,6 +21,7 @@
 	cm = commit -m
 	cmend = commit --amend
 	wip = commit -am "wip"
+	wip-untracked = !sh -c 'git add -A && git commit -m wip'
 
 	br = branch
 	cbr = rev-parse --abbrev-ref HEAD
