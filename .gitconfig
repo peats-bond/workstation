@@ -30,6 +30,9 @@
 	stp = stash pop
 	std = stash drop stash@{0}
 
+	feature-OD = diff origin/dev...HEAD
+	feature-OM = diff origin/master...HEAD
+
 	chp = cherry-pick
 	sha = rev-parse HEAD
 
