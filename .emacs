@@ -56,7 +56,7 @@
 (setq neo-show-hidden-files t)
 
 ;; git
-(global-git-gutter-mode +1)
+;; (global-git-gutter-mode +1)
 
 ;; company (auto-completion)
 (require 'company)
