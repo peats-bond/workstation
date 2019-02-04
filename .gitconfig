@@ -32,8 +32,8 @@
 	sha = rev-parse HEAD
 
 	fo = fetch -p origin
-	fom = fetch origin master:master
-	fod = fetch origin dev:dev
+	fom = fetch -p origin master:master
+	fod = fetch -p origin dev:dev
 
 	lg = log --pretty='%h  %Cred%<(12)%ar  %Cgreen%<(16)%an  %Cblue %s'
 
