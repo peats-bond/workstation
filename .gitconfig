@@ -4,6 +4,7 @@
 [core]
 	editor = emacs
 	hooksPath = /Users/apeatsbond/.git-hooks
+	excludesfile = /Users/apeatsbond/.gitignore_global
 [credential]
 	helper = osxkeychain
 [branch]
