@@ -7,3 +7,4 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew upgrade
 brew tap caskroom/cask
+brew cask install spectacle
