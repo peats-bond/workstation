@@ -38,6 +38,9 @@
 
 	lg = log --pretty='%h  %Cred%<(12)%ar  %Cgreen%<(16)%an  %Cblue %s'
 
+	pom = pull origin master
+	pod = pull orign dev
+
 	rb = rebase
 	rbi = rebase -i
 	rbom = rebase origin/master
