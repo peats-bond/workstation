@@ -52,3 +52,5 @@
 [include]
 	path = ~/.gitconfig_local
 
+[fetch]
+	writeCommitGraph = true
