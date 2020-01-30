@@ -16,6 +16,8 @@
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -150,11 +152,11 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>-2330 638 592 584 -2560 -195 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1719 558 1718 1417 -3440 558 3440 1417 </string>
+	<string>0 539 570 488 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-3439 558 1718 1417 -3440 558 3440 1417 </string>
+	<string>0 539 570 488 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>-1719 558 1718 1417 -3440 558 3440 1417 </string>
+	<string>-1145 1487 570 488 -3440 558 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>-2966 744 570 488 -3440 558 3440 1440 </string>
 	<key>New Bookmarks</key>
@@ -1151,22 +1153,29 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.0beta15</string>
-		<string>3.3.0beta16</string>
-		<string>3.3.5beta3</string>
-		<string>3.3.0beta13</string>
-		<string>3.3.5beta2</string>
-		<string>3.3.2beta2</string>
+		<string>3.3.8beta3</string>
 		<string>3.3.0beta10</string>
+		<string>3.3.7beta1</string>
+		<string>3.3.5beta2</string>
 		<string>3.3.2beta1</string>
+		<string>3.3.7beta3</string>
+		<string>3.3.8beta5</string>
+		<string>3.3.0beta13</string>
+		<string>3.3.0beta15</string>
 		<string>3.3.5beta1</string>
+		<string>3.3.0beta16</string>
+		<string>3.3.8beta4</string>
+		<string>3.3.7beta2</string>
+		<string>3.3.5beta3</string>
+		<string>3.3.2beta2</string>
+		<string>3.3.8beta1</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{-3440, 558}, {3440, 1440}}</string>
 		<key>topLeft</key>
-		<string>{-2392, 1437}</string>
+		<string>{-2782, 1496}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -1177,7 +1186,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>530470790.39965999</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>33</integer>
+	<integer>59</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1902,31 +1911,6 @@
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSearchHistory</key>
-	<array>
-		<string>FAIL</string>
-		<string>Fail</string>
-		<string>@com_github_gogo_protobuf//jsonpb:go_default_library</string>
-		<string>option</string>
-		<string>found</string>
-		<string>typetest.thrift</string>
-		<string>found:</string>
-		<string>err: </string>
-		<string>grpc</string>
-		<string>fail</string>
-	</array>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>type</string>
-		<string>rules</string>
-		<string>base</string>
-		<string>as type</string>
-		<string>cannot use</string>
-		<string>monorepo</string>
-		<string>routermiddleware</string>
-		<string>middle</string>
-		<string>typetest</string>
-	</array>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>529886359.28936899</real>
 	<key>NoSyncTipsDisabled</key>
@@ -2010,7 +1994,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-08T23:26:46Z</date>
+	<date>2020-01-29T20:34:38Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2074,7 +2058,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.5beta3</string>
+	<string>3.3.8beta5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
