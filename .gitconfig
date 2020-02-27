@@ -54,3 +54,5 @@
 
 [fetch]
 	writeCommitGraph = true
+[protocol]
+	version = 2
