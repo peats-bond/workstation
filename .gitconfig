@@ -43,8 +43,13 @@
 
 	rb = rebase
 	rbi = rebase -i
+
 	rbom = rebase origin/master
 	rbomi = rebase -i origin/master
+
+	rblom = pull --rebase origin master
+	rblomi = pull --rebase=interactive origin master
+	
 	rbod = rebase origin/dev
 	rbodi = rebase -i origin/dev
 	rbc = rebase --continue
