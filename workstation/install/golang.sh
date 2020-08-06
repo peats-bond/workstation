@@ -13,4 +13,3 @@ go get -u -v github.com/nsf/gocode
 
 go get -u -v github.com/google/pprof
 go get -u -v github.com/derekparker/delve/cmd/dlv
-go get -u -v golang.org/x/vgo

@@ -6,7 +6,7 @@ git="tig hub"
 analysis="mitmproxy htop cloc colordiff"
 dev="markdown"
 
-tools=($shell $navigation $git $dev)
+tools=($shell $navigation $git $analysis $dev)
 
 ################ Install ################
 echo "## installing tools: ${tools[@]}"
