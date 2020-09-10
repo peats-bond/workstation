@@ -5,6 +5,10 @@
 !.gitmodules
 
 # dot files
+!.zlogin
+!.zlogout
+!.zshenv
+!.zshrc
 !.emacs
 !.gitconfig
 !.tigrc
@@ -13,4 +17,5 @@
 !workstation/
 
 # prezto
-!.zprezto/
+!.zprezto/	
+!.zpreztorc
