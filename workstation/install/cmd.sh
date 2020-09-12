@@ -1,11 +1,10 @@
 #!/bin/bash
 
-shell="zsh emacs"
+shell="emacs tig"
 navigation="rg fasd tree direnv"
-git="tig hub"
 analysis="mitmproxy htop cloc colordiff"
 dev="markdown shellcheck"
 
 ################ Install ################
-all="$shell $navigation $git $analysis $dev"
+all="$shell $navigation $analysis $dev" 
 echo "${all}" | xargs brew install
