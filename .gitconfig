@@ -3,8 +3,8 @@
 	email = alexpb.tgm@gmail.com
 [core]
 	editor = emacs
-	hooksPath = /Users/apeatsbond/.git-hooks
-	excludesfile = /Users/apeatsbond/.gitignore_global
+	hooksPath = /Users/alex/.git-hooks
+	excludesfile = /Users/alex/.gitignore_global
 [credential]
 	helper = osxkeychain
 [branch]
