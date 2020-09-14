@@ -2,6 +2,7 @@
 /*
 
 !.gitignore
+!.gitignore_global
 !.gitmodules
 
 # dot files
