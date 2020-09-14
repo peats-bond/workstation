@@ -18,7 +18,7 @@ git submodule update --init --recursive
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew upgrade
 
-brew cask install iterm2 spectacle visual-studio-code slack chrome
+brew cask install iterm2 spectacle visual-studio-code slack chrome spotify
 echo "$shell $navigation $analysis $dev"  | xargs brew install
 
 # language
