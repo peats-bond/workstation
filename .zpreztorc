@@ -63,6 +63,9 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
 # zstyle ':prezto:module:git:status:ignore' submodules 'all'
 
+# Do not set default Git aliases like 'g' and 'gbc'
+zstyle ':prezto:module:git:alias' skip 'yes'
+
 #
 # GNU Utility
 #
