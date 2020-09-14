@@ -1,7 +1,7 @@
 #!/bin/bash
 
 shell="emacs tig"
-navigation="rg fasd tree direnv"
+navigation="rg tree direnv"
 analysis="mitmproxy htop cloc colordiff"
 dev="markdown shellcheck"
 
