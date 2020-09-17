@@ -38,3 +38,4 @@ brew install \
 # language
 source install/golang.sh
 source install/python.sh
+source install/javascript.sh
