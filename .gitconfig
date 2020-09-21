@@ -1,43 +1,42 @@
 [user]
 	name = Alex Peats-Bond
 	email = alexpb.tgm@gmail.com
+[branch]
+	autosetuprebase = always
 [core]
 	editor = emacs
-	hooksPath = /Users/alex/.git-hooks
 	excludesfile = /Users/alex/.gitignore_global
 [credential]
 	helper = osxkeychain
-[branch]
-	autosetuprebase = always
+[fetch]
+	writeCommitGraph = true
+[include]
+	path = ~/.gitconfig_local
+[protocol]
+	version = 2
 [rerere]
 	enabled = true
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+
 [alias]
-	co = checkout
+	br = branch
 	
+	co = checkout
+	chp = cherry-pick
+
 	cm = commit -m
 	cmend = commit --amend
 	wip = commit -am "wip"
 	wipu = !sh -c 'git add -A && git commit -m wip'
 
-	br = branch
-	cbr = rev-parse --abbrev-ref HEAD
-	
-	st = status
-	sts = status -s
-	
-	stp = stash pop
-	std = stash drop stash@{0}
-
 	feature-OD = diff origin/dev...HEAD
 	feature-OM = diff origin/master...HEAD
-
-	chp = cherry-pick
-	sha = rev-parse HEAD
 
 	fo = fetch -p origin
 	fom = fetch -p origin master:master
 	fod = fetch -p origin dev:dev
-
+	
 	lg = log --pretty='%h  %Cred%<(12)%ar  %Cgreen%<(16)%an  %Cblue %s'
 
 	pom = pull origin master
@@ -59,12 +58,10 @@
 	rbodi = rebase -i origin/dev
 	rbc = rebase --continue
 
-[include]
-	path = ~/.gitconfig_local
+	sha = rev-parse HEAD
 
-[fetch]
-	writeCommitGraph = true
-[protocol]
-	version = 2
-[url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
+	st = status
+	sts = status -s
+	
+	stp = stash pop
+	std = stash drop stash@{0}
