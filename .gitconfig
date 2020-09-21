@@ -23,6 +23,8 @@
 	cbr = rev-parse --abbrev-ref HEAD
 	
 	st = status
+	sts = status -s
+	
 	stp = stash pop
 	std = stash drop stash@{0}
 
