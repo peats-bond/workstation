@@ -3,9 +3,6 @@
 # xcode
 xcode-select --install
 
-# git
-git config --global core.excludesfile ~/.gitignore_global
-
 # zprezto
 git submodule update --init --recursive
 
