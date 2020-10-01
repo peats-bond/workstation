@@ -10,8 +10,6 @@
 	helper = osxkeychain
 [fetch]
 	writeCommitGraph = true
-[include]
-	path = ~/.gitconfig_local
 [protocol]
 	version = 2
 [rerere]
@@ -65,3 +63,6 @@
 	
 	stp = stash pop
 	std = stash drop stash@{0}
+
+[include]
+	path = ~/.gitconfig_local
