@@ -40,6 +40,8 @@
 	pom = pull origin master
 	pod = pull origin dev
 
+	pushf = push --force-with-lease
+
 	rb = rebase
 	rbi = rebase -i
 
