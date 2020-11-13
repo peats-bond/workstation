@@ -24,6 +24,7 @@ brew install \
     colordiff \
     direnv \
     emacs \
+    git-absorb \
     htop \
     markdown \
     mitmproxy \
