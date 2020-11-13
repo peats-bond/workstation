@@ -25,8 +25,7 @@
 
 	cm = commit -m
 	cmend = commit --amend
-	wip = commit -am "wip"
-	wipu = !sh -c 'git add -A && git commit -m wip'
+	wip = !git add -A && git commit -m wip
 
 	feature-OD = diff origin/dev...HEAD
 	feature-OM = diff origin/master...HEAD
