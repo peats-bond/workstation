@@ -41,6 +41,7 @@
 	pod = pull origin dev
 
 	pushf = push --force-with-lease
+	pushu = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
 
 	rb = rebase
 	rbi = rebase -i
