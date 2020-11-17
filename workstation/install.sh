@@ -14,6 +14,7 @@ brew cask install \
     google-chrome \
     iterm2 \
     notion \
+    postico \
     slack \
     spectacle \
     spotify \
