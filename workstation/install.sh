@@ -32,8 +32,3 @@ brew install \
     shellcheck \
     tig \
     tree
-
-# language
-source install/golang.sh
-source install/python.sh
-source install/javascript.sh
