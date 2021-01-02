@@ -33,3 +33,7 @@ brew install \
     shellcheck \
     tig \
     tree
+
+# done
+open -a iterm
+exit
