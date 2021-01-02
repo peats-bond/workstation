@@ -10,7 +10,7 @@ git submodule update --init --recursive
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew upgrade
 
-brew cask install \
+brew install --cask \
     google-chrome \
     iterm2 \
     notion \
