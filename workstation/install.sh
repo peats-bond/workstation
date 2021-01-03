@@ -13,6 +13,7 @@ brew upgrade
 brew install --cask \
     google-chrome \
     iterm2 \
+    messenger \
     notion \
     postico \
     slack \
