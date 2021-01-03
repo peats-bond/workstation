@@ -19,7 +19,8 @@ brew install --cask \
     slack \
     spectacle \
     spotify \
-    visual-studio-code
+    visual-studio-code \
+    whatsapp
 
 brew install \
     cloc \
