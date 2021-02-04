@@ -18,8 +18,7 @@
 	insteadOf = https://github.com/
 
 [alias]
-	br = branch
-	brv = branch -vv
+	br = branch -vv
 	
 	co = checkout
 	chp = cherry-pick
