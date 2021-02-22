@@ -23,6 +23,8 @@
 	co = checkout
 	chp = cherry-pick
 
+	d = diff
+
 	cm = commit -m
 	cmend = commit --amend
 	wip = !git add -A && git commit -m wip
