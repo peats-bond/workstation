@@ -19,6 +19,7 @@
 
 [alias]
 	br = branch -vv
+	brsetup = "!BR=$(git rev-parse --abbrev-ref HEAD); git branch --set-upstream-to=origin/$BR $BR"
 	
 	co = checkout
 	chp = cherry-pick
