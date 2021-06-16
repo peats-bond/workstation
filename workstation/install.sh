@@ -11,6 +11,7 @@ git submodule update --init --recursive
 brew upgrade
 
 brew install --cask \
+    docker \
     google-chrome \
     iterm2 \
     messenger \
