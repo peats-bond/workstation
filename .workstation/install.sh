@@ -16,6 +16,7 @@ brew install --cask \
     iterm2 \
     messenger \
     notion \
+    nvm \
     postico \
     slack \
     spectacle \
