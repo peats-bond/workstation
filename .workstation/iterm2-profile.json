@@ -1,11 +1,5 @@
 {
-  "Ansi 5 Color" : {
-    "Red Component" : 0.752197265625,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.74494361877441406,
-    "Alpha Component" : 1,
-    "Green Component" : 0.24931684136390686
-  },
+  "Thin Strokes" : 4,
   "Working Directory" : "\/Users\/Alex",
   "Prompt Before Closing 2" : 0,
   "Selected Text Color" : {
@@ -83,8 +77,8 @@
               "Alpha Component" : 1,
               "Green Component" : 0.63
             },
-            "minwidth" : 0,
             "base: priority" : 5,
+            "minwidth" : 0,
             "maxwidth" : 1.7976931348623157e+308
           },
           "layout advanced configuration dictionary value" : {
@@ -99,7 +93,6 @@
           "knobs" : {
             "base: compression resistance" : 1,
             "base: priority" : 5,
-            "minwidth" : 0,
             "shared text color" : {
               "Red Component" : 0.84599999999999997,
               "Color Space" : "sRGB",
@@ -107,6 +100,7 @@
               "Alpha Component" : 1,
               "Green Component" : 0.90000000000000002
             },
+            "minwidth" : 0,
             "maxwidth" : 1.7976931348623157e+308
           },
           "layout advanced configuration dictionary value" : {
@@ -490,18 +484,6 @@
     "Alpha Component" : 1,
     "Green Component" : 0
   },
-  "Default Bookmark" : "No",
-  "Cursor Color" : {
-    "Red Component" : 0.99997633695602417,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.99998724460601807,
-    "Alpha Component" : 1,
-    "Green Component" : 1
-  },
-  "Disable Smcup Rmcup" : false,
-  "Name" : "Alex",
-  "Guid" : "F55F4375-4104-487A-A20C-5DCF6F0CA24A",
-  "Blinking Cursor" : false,
   "Ansi 1 Color" : {
     "Red Component" : 0.7074432373046875,
     "Color Space" : "sRGB",
@@ -509,6 +491,18 @@
     "Alpha Component" : 1,
     "Green Component" : 0.23660069704055786
   },
+  "Default Bookmark" : "No",
+  "Disable Smcup Rmcup" : false,
+  "Name" : "Alex",
+  "Blinking Cursor" : false,
+  "Cursor Color" : {
+    "Red Component" : 0.99997633695602417,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.99998724460601807,
+    "Alpha Component" : 1,
+    "Green Component" : 1
+  },
+  "Guid" : "F55F4375-4104-487A-A20C-5DCF6F0CA24A",
   "Ansi 8 Color" : {
     "Red Component" : 0.40781760215759277,
     "Color Space" : "sRGB",
@@ -539,7 +533,7 @@
     "editor" : "com.microsoft.VSCode"
   },
   "Ambiguous Double Width" : false,
-  "Blur Radius" : 2,
+  "Blur Radius" : 6.899712484137055,
   "Ansi 0 Color" : {
     "Red Component" : 0.078431375324726105,
     "Color Space" : "sRGB",
@@ -549,7 +543,7 @@
   },
   "Cursor Type" : 2,
   "AWDS Pane Directory" : "",
-  "Blur" : false,
+  "Blur" : true,
   "Normal Font" : "Monaco 12",
   "Vertical Spacing" : 1,
   "Disable Printing" : false,
@@ -569,6 +563,7 @@
   "Option Key Sends" : 2,
   "Blink Allowed" : false,
   "Minimum Contrast" : 0,
+  "Only The Default BG Color Uses Transparency" : false,
   "Ansi 15 Color" : {
     "Red Component" : 0.99999600648880005,
     "Color Space" : "sRGB",
@@ -605,6 +600,12 @@
   "Columns" : 80,
   "Visual Bell" : true,
   "Custom Directory" : "Advanced",
-  "Thin Strokes" : 4,
+  "Ansi 5 Color" : {
+    "Red Component" : 0.752197265625,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.74494361877441406,
+    "Alpha Component" : 1,
+    "Green Component" : 0.24931684136390686
+  },
   "Set Local Environment Vars" : true
 }
