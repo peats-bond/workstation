@@ -39,6 +39,7 @@
 	
 	lg = log --pretty='%h  %Cred%<(12)%ar  %Cgreen%<(16)%an  %Cblue %s'
 
+	p = pull --no-stat
 	pom = pull origin master
 	pod = pull origin dev
 
