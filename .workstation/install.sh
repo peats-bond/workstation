@@ -13,6 +13,7 @@ brew upgrade
 brew install --cask \
     docker \
     google-chrome \
+    google-drive \
     iterm2 \
     messenger \
     notion \
