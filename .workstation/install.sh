@@ -7,7 +7,7 @@ xcode-select --install
 git submodule update --init --recursive
 
 # brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew upgrade
 
 brew install --cask \
