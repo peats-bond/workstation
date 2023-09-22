@@ -46,7 +46,6 @@
 ;; text editing
 (menu-bar-mode -1) ;; hide menu bar
 (setq x-select-enable-clipboard t)
-(global-linum-mode t) ;; line numbers on the left
 (setq linum-format "%d ") ;; add space between line numbers and text
 (setq column-number-mode t)
 (show-paren-mode t) ;; matching parenthesis
