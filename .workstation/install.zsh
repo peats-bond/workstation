@@ -7,17 +7,16 @@ xcode-select --install
 git submodule update --init --recursive
 
 # brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew upgrade
 
 brew install --cask \
     docker \
     google-chrome \
     google-drive \
+    gh \
     iterm2 \
     messenger \
     notion \
-    nvm \
     postico \
     slack \
     spectacle \
@@ -38,6 +37,9 @@ brew install \
     shellcheck \
     tig \
     tree
+
+# nvm - https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 # done
 open -a iterm
