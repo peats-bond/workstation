@@ -31,16 +31,16 @@
 	wip = !git add -A && git commit -m wip
 
 	feature-OD = diff origin/dev...HEAD
-	feature-OM = diff origin/master...HEAD
+	feature-OM = diff origin/main...HEAD
 
 	fo = fetch -p origin
-	fom = fetch -p origin master:master
+	fom = fetch -p origin main:main
 	fod = fetch -p origin dev:dev
 	
 	lg = log --pretty='%h  %Cred%<(12)%ar  %Cgreen%<(16)%an  %Cblue %s'
 
 	p = pull --no-stat
-	pom = pull origin master
+	pom = pull origin main
 	pod = pull origin dev
 
 	pushf = push --force-with-lease
@@ -49,11 +49,11 @@
 	rb = rebase
 	rbi = rebase -i
 
-	rbom = rebase origin/master
-	rbomi = rebase -i origin/master
+	rbom = rebase origin/main
+	rbomi = rebase -i origin/main
 
-	rblom = pull --rebase origin master
-	rblomi = pull --rebase=interactive origin master
+	rblom = pull --rebase origin main
+	rblomi = pull --rebase=interactive origin main
 
 	rblod = pull --rebase origin dev
 	rblodi = pull --rebase=interactive origin dev
