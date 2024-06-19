@@ -11,6 +11,7 @@ brew upgrade
 
 brew install --cask \
     akiflow \
+    dbeaver-community \
     docker \
     google-chrome \
     google-drive \
