@@ -10,6 +10,7 @@ git submodule update --init --recursive
 brew upgrade
 
 brew install --cask \
+    akiflow \
     docker \
     google-chrome \
     google-drive \
@@ -18,7 +19,7 @@ brew install --cask \
     notion \
     postico \
     slack \
-    spectacle \
+    rectangle \
     spotify \
     visual-studio-code \
     whatsapp
