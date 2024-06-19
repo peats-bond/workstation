@@ -22,7 +22,8 @@ brew install --cask \
     rectangle \
     spotify \
     visual-studio-code \
-    whatsapp
+    whatsapp \
+    zoom
 
 brew install \
     cloc \
