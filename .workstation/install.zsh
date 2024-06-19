@@ -13,7 +13,6 @@ brew install --cask \
     docker \
     google-chrome \
     google-drive \
-    gh \
     iterm2 \
     messenger \
     notion \
@@ -30,6 +29,7 @@ brew install \
     direnv \
     emacs \
     git-absorb \
+    gh \
     htop \
     markdown \
     mitmproxy \
