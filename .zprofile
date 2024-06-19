@@ -2,18 +2,12 @@
 # Executes commands at login pre-zshrc.
 #
 
-#
 # Browser
-#
-
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
 fi
 
-#
 # Editors
-#
-
 export EDITOR='emacs'
 export VISUAL='emacs'
 export PAGER='less'
@@ -59,10 +53,7 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
 
-#
 # Temporary Files
-#
-
 if [[ ! -d "$TMPDIR" ]]; then
   export TMPDIR="/tmp/$LOGNAME"
   mkdir -p -m 700 "$TMPDIR"
@@ -75,3 +66,6 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 #
 # eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
+
+# brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
