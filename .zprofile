@@ -69,3 +69,7 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 
 # brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# gcp cli
+source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"

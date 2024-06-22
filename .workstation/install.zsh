@@ -14,6 +14,7 @@ brew install --cask \
     dbeaver-community \
     docker \
     google-chrome \
+    google-cloud-sdk \
     google-drive \
     iterm2 \
     messenger \
