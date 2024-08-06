@@ -32,6 +32,7 @@ brew install \
     colordiff \
     direnv \
     emacs \
+    fzf \
     git-absorb \
     gh \
     htop \
