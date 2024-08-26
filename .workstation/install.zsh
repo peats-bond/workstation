@@ -19,6 +19,7 @@ brew install --cask \
     iterm2 \
     messenger \
     notion \
+    notunes \
     postico \
     slack \
     rectangle \
@@ -42,6 +43,9 @@ brew install \
     shellcheck \
     tig \
     tree
+
+#notunes - default to spotify
+defaults write digital.twisted.noTunes replacement /Applications/Spotify.app
 
 # nvm - https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
