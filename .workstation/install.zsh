@@ -12,6 +12,7 @@ brew upgrade
 brew install --cask \
     akiflow \
     dbeaver-community \
+    chatgpt \ 
     docker \
     google-chrome \
     google-cloud-sdk \
