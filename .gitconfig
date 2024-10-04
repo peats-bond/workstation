@@ -62,6 +62,8 @@
 	rbodi = rebase -i origin/dev
 	rbc = rebase --continue
 
+	reset1 = reset HEAD~1
+
 	sha = rev-parse HEAD
 	shacopy = "!git rev-parse HEAD | pbcopy"
 
