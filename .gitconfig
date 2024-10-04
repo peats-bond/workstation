@@ -16,6 +16,8 @@
 	enabled = true
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+[push]
+	autoSetupRemote = true
 
 [alias]
 	br = branch -vv
@@ -36,8 +38,6 @@
 	fo = fetch -p origin
 	fom = fetch -p origin main:main
 	fod = fetch -p origin dev:dev
-	
-	lg = log --pretty='%h  %Cred%<(12)%ar  %Cgreen%<(16)%an  %Cblue %s'
 
 	p = pull --no-stat
 	pom = pull origin main
