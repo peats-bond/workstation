@@ -7,13 +7,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# ls
+# functional aliases
 alias ls='ls -a'
-
-# tree
 alias t='tree -a -L 1'
+alias pn=pnpm
 
-# Fun Aliases
+# Fun aliases
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy; echo '¯\_(ツ)_/¯'"
 alias tableflip='echo "(╯°□°)╯︵ ┻━┻" | pbcopy; echo "(╯°□°)╯︵ ┻━┻"'
 alias partyparrot="curl parrot.live"
@@ -49,3 +48,5 @@ load-nvmrc
 
 # fzf
 source <(fzf --zsh)
+
+. "$HOME/.local/bin/env"
