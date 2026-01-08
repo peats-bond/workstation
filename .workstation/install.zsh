@@ -18,8 +18,6 @@ brew install --cask \
     google-cloud-sdk \
     google-drive \
     iterm2 \
-    messenger \
-    notion \
     notunes \
     postico \
     slack \
@@ -45,7 +43,7 @@ brew install \
     tig \
     tree
 
-#notunes - default to spotify
+# notunes - default to spotify
 defaults write digital.twisted.noTunes replacement /Applications/Spotify.app
 
 # nvm - https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
