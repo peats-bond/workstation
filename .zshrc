@@ -49,4 +49,5 @@ load-nvmrc
 # fzf
 source <(fzf --zsh)
 
-. "$HOME/.local/bin/env"
+# uv
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
