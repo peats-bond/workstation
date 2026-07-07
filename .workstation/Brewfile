@@ -1,0 +1,44 @@
+# Source of truth for Homebrew packages, applied by install.zsh via `brew bundle`.
+# Add/remove entries here. Re-running is safe: bundle installs what's missing and
+# skips what's present. Unlike `brew install a b c`, one failure does not abort the rest.
+
+# formulae (CLI tools)
+brew "cloc"
+brew "colordiff"
+brew "direnv"
+brew "emacs"
+brew "fzf"
+brew "gh"
+brew "git-absorb"
+brew "htop"
+brew "jq"
+brew "markdown"
+brew "ripgrep"
+brew "shellcheck"
+brew "tailscale"
+brew "tig"
+brew "tree"
+brew "uv"
+
+# casks (GUI apps + binaries)
+cask "1password"
+cask "chatgpt"
+cask "claude"
+cask "claude-code"
+cask "codex"
+cask "dbeaver-community"
+cask "gcloud-cli"
+cask "google-chrome", args: { adopt: true } # adopt: take over a manually-installed app instead of erroring
+cask "google-drive"                          # .pkg installer — prompts for sudo password
+cask "iterm2"
+cask "linear"
+cask "mitmproxy"
+cask "notunes"
+cask "postico"
+cask "rectangle"
+cask "slack"
+cask "spotify"
+cask "tailscale-app"
+cask "visual-studio-code"
+cask "whatsapp"
+cask "zoom"                                  # .pkg installer — prompts for sudo password
