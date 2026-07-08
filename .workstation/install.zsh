@@ -3,6 +3,21 @@
 # resolve this script's own directory so it can be run from anywhere
 SCRIPT_DIR="${0:A:h}"
 
+# git email - prompt early so it isn't missed behind the long brew install.
+# ~/.gitconfig_local is git-ignored and included by ~/.gitconfig, overriding the
+# `email = replace-me` placeholder. created once; edit the file to change it later.
+GITCONFIG_LOCAL="$HOME/.gitconfig_local"
+if [ ! -f "$GITCONFIG_LOCAL" ]; then
+    printf "git email for this machine [blank = fill in later]: "
+    read -r git_email
+    : "${git_email:=replace-me@example.com}"
+    cat >| "$GITCONFIG_LOCAL" <<EOF
+[user]
+	email = $git_email
+EOF
+    echo "wrote $GITCONFIG_LOCAL"
+fi
+
 # xcode - skip if command line tools are already installed
 xcode-select -p &>/dev/null || xcode-select --install
 
