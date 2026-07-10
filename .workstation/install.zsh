@@ -44,6 +44,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 defaults write com.apple.finder AppleShowAllFiles -bool true
 killall Finder
 
+# always show bluetooth in the menu bar (18 = show; controlled by Control Center)
+defaults -currentHost write com.apple.controlcenter Bluetooth -int 18
+killall ControlCenter
+
 # pointer + scroll speed - max (takes effect after logout/restart)
 defaults write -g com.apple.mouse.scaling -float 3.0        # mouse tracking
 defaults write -g com.apple.trackpad.scaling -float 3.0     # trackpad tracking
