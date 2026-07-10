@@ -34,8 +34,31 @@ brew bundle --file="$SCRIPT_DIR/Brewfile"
 # add --force to actually uninstall the drift and make the Brewfile authoritative.
 brew bundle cleanup --file="$SCRIPT_DIR/Brewfile"
 
-# notunes - default to spotify
+# notunes - default to spotify, then keep it running at login via launchd.
+# the cask only copies the app; it never launches it or sets it to start.
 defaults write digital.twisted.noTunes replacement /Applications/Spotify.app
+xattr -dr com.apple.quarantine /Applications/noTunes.app 2>/dev/null
+NOTUNES_PLIST=~/Library/LaunchAgents/digital.twisted.noTunes.plist
+cat > "$NOTUNES_PLIST" <<'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>digital.twisted.noTunes</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Applications/noTunes.app/Contents/MacOS/noTunes</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+</dict>
+</plist>
+EOF
+launchctl unload "$NOTUNES_PLIST" 2>/dev/null
+launchctl load "$NOTUNES_PLIST"
 
 # nvm - https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
