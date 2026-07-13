@@ -37,6 +37,7 @@ brew bundle cleanup --file="$SCRIPT_DIR/Brewfile"
 # notunes - default to spotify, then keep it running at login via launchd.
 # the cask only copies the app; it never launches it or sets it to start.
 defaults write digital.twisted.noTunes replacement /Applications/Spotify.app
+defaults write digital.twisted.noTunes hideIcon -bool true
 xattr -dr com.apple.quarantine /Applications/noTunes.app 2>/dev/null
 NOTUNES_PLIST=~/Library/LaunchAgents/digital.twisted.noTunes.plist
 cat > "$NOTUNES_PLIST" <<'EOF'
