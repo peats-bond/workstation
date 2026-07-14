@@ -70,6 +70,8 @@ killall Finder
 
 # always show bluetooth in the menu bar (18 = show; controlled by Control Center)
 defaults -currentHost write com.apple.controlcenter Bluetooth -int 18
+# show battery percentage in the menu bar
+defaults write com.apple.controlcenter BatteryShowPercentage -bool true
 killall ControlCenter
 
 # pointer + scroll speed - max (takes effect after logout/restart)
