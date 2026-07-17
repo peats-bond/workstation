@@ -3,6 +3,7 @@
 # skips what's present. Unlike `brew install a b c`, one failure does not abort the rest.
 
 # formulae (CLI tools)
+brew "1password-cli"
 brew "cloc"
 brew "colordiff"
 brew "direnv"
