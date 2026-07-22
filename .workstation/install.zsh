@@ -79,6 +79,9 @@ defaults write -g com.apple.mouse.scaling -float 3.0        # mouse tracking
 defaults write -g com.apple.trackpad.scaling -float 3.0     # trackpad tracking
 defaults write -g com.apple.scrollwheel.scaling -float 3.0  # mouse scroll wheel
 
+# double-click speed - comfortable middle (too fast breaks double-click-to-select-word)
+defaults write -g com.apple.mouse.doubleClickThreshold -float 0.5
+
 # enable right-click on magic mouse
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode -string TwoButton
 defaults write com.apple.AppleMultitouchMouse MouseButtonMode -string TwoButton
