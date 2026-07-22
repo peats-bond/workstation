@@ -57,3 +57,9 @@ export PATH="$HOME/.grok/bin:$PATH"
 fpath=(~/.grok/completions/zsh $fpath)
 autoload -Uz compinit && compinit -C
 # <<< grok installer <<<
+
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/alex/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
